@@ -1,35 +1,34 @@
 // Some code thanks to @chrisgannon
 
-var doms = document.getElementsByClassName("glowy-blob");
+var select = function(s) {
+  return document.querySelector(s);
+}
 
-var selected = 0;
-
-for(var x =0;x<doms.length;x++) {
-    for(var i = 0;i<doms[x].children.length;i++) {
-        doms[x].children[i].addEventListener("mousedown", function(e){
-            selected = this;
-        })
+function randomBetween(min,max)
+{
+    var number = Math.floor(Math.random()*(max-min+1)+min);
+  
+    if ( number !== 0 ){
+      return number;
+    }else {
+      return 0.5;
     }
 }
 
-window.addEventListener("mouseup", function(e){
-	selected.style.animation = "bounceback 1s ease";
-	selected.style.animationFillMode = "forwards";
-	var lala = selected;
-	selected = null;
+var tl = new TimelineMax();
 
-	setTimeout(function() {
-	    lala.style.animation = "";
-	    lala.style.animationFillMode = "";
-	    lala.style.left = "";
-	    lala.style.top = "";
-	},1000)
+for(var i = 0; i < 20; i++){
 
-})
+  var t = TweenMax.to(select('.bubble' + i), randomBetween(1, 1.5), {
+    x: randomBetween(12, 15) * (randomBetween(-1, 1)),
+    y: randomBetween(12, 15) * (randomBetween(-1, 1)), 
+    repeat:-1,
+    repeatDelay:randomBetween(0.2, 0.5),
+    yoyo:true,
+    ease:Elastic.easeOut.config(1, 0.5)
+  })
 
-window.addEventListener("mousemove", function(e) {
-    if(selected == null || !selected) return;
-    selected.style.left = (e.clientX - (selected.getBoundingClientRect().width/2) - window.innerWidth/2) +"px"
-    selected.style.top = (e.clientY - (selected.getBoundingClientRect().height/2) - window.innerHeight/2 ) +"px"
-    selected.style.animation = 0;
-})
+  tl.add(t, (i+1)/0.6)
+}
+
+tl.seek(50);
