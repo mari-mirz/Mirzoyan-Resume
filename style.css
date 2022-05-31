@@ -6,6 +6,9 @@ body{
       rgba(0, 0, 0, 0.5)
       ),
     url('images/Windows_XP_Wallpaper.jpg');
+    background-repeat:no-repeat;
+
+    background-size:cover;
     text-align: center;
     margin: 0;
 }
