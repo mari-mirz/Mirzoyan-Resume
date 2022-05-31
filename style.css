@@ -1,22 +1,21 @@
-body{
+body {
   background-color: #826F66;
   background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-      ),
+    linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
     url('images/Windows_XP_Wallpaper.jpg');
-    background-repeat:no-repeat;
-    text-align: center;
-    margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  margin: 0;
 }
 
-audio{
+audio {
   display: block;
-
 }
 
-hr{
+hr {
   border-style: none;
   border-top-style: none;
   border-bottom-style: dotted;
@@ -29,42 +28,41 @@ hr{
   width:200px;
   height: 200px;
 } */
-
-h1{
+h1 {
   color: #ADC2A9;
   font-family: sans-serif;
   font-weight: 400;
 }
 
-h2{
+h2 {
   color: #D3E4CD;
   font-family: sans-serif;
 }
 
-h3{
+h3 {
   color: #D3E4CD;
   font-family: sans-serif;
 }
 
-h1:hover{
+h1:hover {
   color: #F8ECD1;
 }
 
-h2:hover{
+h2:hover {
   color: #F8ECD1;
 }
 
-h3:hover{
+h3:hover {
   color: #F8ECD1;
 }
 
-p{
+p {
   font-family: sans-serif;
   color: #FEF5ED
-  /* display: inline; */
+    /* display: inline; */
 }
 
-ul{
+ul {
   font-family: sans-serif;
   color: #FEF5ED;
   margin: 0;
@@ -83,20 +81,20 @@ table {
   border-style: dotted;
 }
 
-.audio{
+.audio {
   display: block;
 }
 
-.caption{
+.caption {
   display: block;
 }
 
-.caption_icon{
+.caption_icon {
   vertical-align: top;
   display: inline-block;
 }
 
-.circular{
+.circular {
   border-radius: 100%;
 }
 
@@ -105,8 +103,8 @@ table {
   margin-right: auto;
 }
 
-.directory{
-  display:inline-flex;
+.directory {
+  display: inline-flex;
 }
 
 a:link {
