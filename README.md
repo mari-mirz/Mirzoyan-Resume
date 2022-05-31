@@ -1,2 +1,0 @@
-# mariana-mirzoyan
-Resume
