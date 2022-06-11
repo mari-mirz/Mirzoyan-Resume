@@ -70,7 +70,7 @@
 }
 @keyframes loader{
   0%{
-    transform: translate(-30px);
+    transform: translate(-80px);
   }
   100%{
     transform: translate(150px);
