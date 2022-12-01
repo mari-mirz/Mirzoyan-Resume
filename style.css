@@ -112,6 +112,15 @@ form {
   font-family: 'Roboto', sans-serif;
 }
 
+label {
+      display: inline-block;
+      width: 105px;
+}
+
+input {
+  display: inline-block;
+}
+
 hr {
   border-style: none;
   border-top-style: none;
