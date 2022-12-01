@@ -97,8 +97,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 
 
@@ -207,6 +207,10 @@ ul {
 .hobbies {
   display: inline-block;
 }
+
+.jobs  [
+  grid-column: 1;
+]
 
 a:link {
   color: #D3E4CD;
