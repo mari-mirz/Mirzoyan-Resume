@@ -1,3 +1,2 @@
 # Mirzoyan-Resume
-Resume
-this is my website!!!
+Link: https://witty-wave-0a2f48100.azurestaticapps.net/
